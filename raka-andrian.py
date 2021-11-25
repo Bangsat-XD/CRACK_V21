@@ -71,10 +71,10 @@ logo = """
 ██╔══██╗██╔══██║██╔═██╗░██╔══██║
 ██║░░██║██║░░██║██║░╚██╗██║░░██║
 ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝
-\033[1;41;97mAuthor     : ☆ RAKA ☆ ™︻®╤───────═◍➤ \033[0m
-\033[1;41;97mGithub     : Bangsat-XD
-\033[1;41;97mFacebook   : Raka Andrian Tara
-\033[1;41;97mInstagram  : raka_andrian27
+\033[1;41;92mAuthor     : ☆ RAKA ☆ ™︻®╤───────═◍➤ 
+\033[1;41;92mGithub     : Bangsat-XD
+\033[1;41;92mFacebook   : Raka Andrian Tara
+\033[1;41;92mInstagram  : raka_andrian27
  """
 def tik():
 	titik = ['.   ','..  ','... ']
