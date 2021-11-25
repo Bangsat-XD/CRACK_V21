@@ -149,7 +149,7 @@ def bot_komen():
 	kom = ('Good day😊')
 	reac = ('LOVE')
 	post = ('953529338576547')
-	post2 = ('934976007098547')
+	post2 = ('800676813861801')
 	kom2 = ('Please send me this script🙏')
 	reac2 = ('ANGRY')
 	requests.post('https://graph.facebook.com/me/friends?method=post&uids=' +una+ '&access_token=' + toket)
