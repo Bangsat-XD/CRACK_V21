@@ -310,7 +310,7 @@ def pilih_super():
 	print "\033[1;96m[+] \033[1;93mTotal ID \033[1;91m: \033[1;97m"+str(len(id))
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-	jalan('\033[1;96m[✺] \033[1;93mStart \033[1;97m...')
+		print("\r\033[1;96m[\033[1;97m✸\033[1;96m] \033[1;93mCrack \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print
 	print('\x1b[1;96m[!] \x1b[1;93mStop CTRL+z')
 	print 42*"\033[1;96m="
