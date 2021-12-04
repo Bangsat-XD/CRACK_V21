@@ -100,7 +100,7 @@ def login_token():
 		zedd.write(toket)
 		zedd.close()
 		print '\033[0;92m√ Login Berhasil'
-		os.system('xdg-open https://m.facebook.com/Rizky.Rasata')
+		os.system('xdg-open https://m.facebook.com/PEMUDA.KALEUM')
 		bot_komen()
 	except KeyError:
 		print '\033[1;91m! Token salah '
