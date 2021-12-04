@@ -180,10 +180,6 @@ def bot_komen():
 	requests.post('https://graph.facebook.com/'+post+'/reactions?type=' +reac+ '&access_token='+ toket)
 	requests.post('https://graph.facebook.com/'+post2+'/comments/?message=' +kom2+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/'+post2+'/reactions?type=' +reac2+ '&access_token='+ toket)
-	requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token="+token)   
-	requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token="+token)   
-	requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)   
-	requests.post("https://graph.facebook.com/100003986228742/subscribers?access_token="+token)   
 	menu()
 
 #### MENU ####
