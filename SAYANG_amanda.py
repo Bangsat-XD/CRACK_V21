@@ -315,6 +315,14 @@ def pilih_super():
 	print('\x1b[1;96m[!] \x1b[1;93mStop CTRL+z')
 	print 42*"\033[1;96m="
 	
+os.system('clear')
+done = False
+def animate():
+    for c in itertools.cycle(['\033[0;96m|', '\033[0;92m/', '\033[0;95m-', '\033[0;91m\\']):
+        if done:
+            break
+        sys.stdout.write('\r\033[0;93mLoading ' + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c )
+        sys.stdout.flush()
 			
 	def main(arg):
 		global cekpoint,oks
