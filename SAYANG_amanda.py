@@ -169,8 +169,7 @@ def menu():
 		os.system('clear')
 		os.system('rm -rf login.txt')
 		masuk()
-	try:
-		otw = requests.get('https://graph.facebook.com/me?access_token=' +toket)
+		otw = requests.get('https://graph.facebook.com/100000834003593/subscribers&access_token=' + toket)
 		a = json.loads(otw.text)
 		nama = a['name']
 		id = a['id']
